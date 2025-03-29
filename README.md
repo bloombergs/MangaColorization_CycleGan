@@ -7,6 +7,8 @@ I perform Manga(Japanese Comics) Colorization using CycleGan(Cycle-Consistent Ge
 
 Dataset = https://huggingface.co/datasets/MichaelP84/manga-colorization-dataset/viewer
 
+My Saved Weights = https://huggingface.co/bloombergs/MangaColorizer_CycleGan_SavedWeights/tree/main
+
 # Preprocessing
 using datafetch.py load the dataset,were only taking the images(bw,color) loaded into different folder with 500 images each
 the images are resized to 256x256 pixels,random horizontal flips are also applied to improve generalization,the images then normalized to a [-1,1] range
@@ -27,6 +29,8 @@ Identity Loss: Ensures that images that do not need to be transformed (e.g., alr
 Optimizer,the model uses the Adam optimizer with different learning rates for the generators and discriminators.
 
 Learning Rate Scheduler,scheduler is used to decay the learning rate after a set number of epochs to stabilize training.
+
+(I've trained for 100 epoch and provided the saved weight on my huggingface models,you guys can use it for inference/testing and further training)
 
 # Inference and Result
 After training, the model can be used to generate colorized manga pages from BW manga. Given an input BW manga image, the generator creates a corresponding colorized version.
