@@ -203,8 +203,8 @@ class ImageDataset(Dataset):
         A_dir = data_dira
         B_dir = data_dirb
         
-        self.files_A = [os.path.join(A_dir, name) for name in sorted(os.listdir(A_dir))[:450]]
-        self.files_B = [os.path.join(B_dir, name) for name in sorted(os.listdir(B_dir))[:450]]
+        self.files_A = [os.path.join(A_dir, name) for name in sorted(os.listdir(A_dir))[:500]]
+        self.files_B = [os.path.join(B_dir, name) for name in sorted(os.listdir(B_dir))[:500]]
         
         self.transforms = transforms
         
