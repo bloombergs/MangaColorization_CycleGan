@@ -26,6 +26,8 @@ Learning Rate Scheduler,scheduler is used to decay the learning rate after a set
 
 # Inference and Result
 After training, the model can be used to generate colorized manga pages from BW manga. Given an input BW manga image, the generator creates a corresponding colorized version.
+Result : 
+
 ![mergedresult](https://github.com/user-attachments/assets/0cc13c9e-5f04-4f9c-81cc-3925932bfef1)
 
 
