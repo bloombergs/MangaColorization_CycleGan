@@ -10,8 +10,9 @@ Dataset = https://huggingface.co/datasets/MichaelP84/manga-colorization-dataset/
 My Saved Weights(100 epochs) = https://huggingface.co/bloombergs/MangaColorizer_CycleGan_SavedWeights/tree/main
 
 # Preprocessing
-using datafetch.py load the dataset,were only taking the images(bw,color) loaded into different folder with 500 images each
-the images are resized to 256x256 pixels,random horizontal flips are also applied to improve generalization,the images then normalized to a [-1,1] range
+using datafetch.py load the dataset,were only taking the images(bw,color) loaded into different folder with 500 images each(tbf its up to you for the amount of images loaded and used,i choose lower amount to fasten and lighten the training process),
+
+the images are resized to 256x256 pixels,random horizontal flips are also applied to improve generalization,the images then normalized to a [-1,1] range.
 
 # Model
 Generator,The generator network follows a ResNet-based architecture, consisting of downsampling layers (for feature extraction) and upsampling layers (for image reconstruction).
