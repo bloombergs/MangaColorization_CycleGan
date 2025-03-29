@@ -3,7 +3,7 @@
 ![resultlandscape](https://github.com/user-attachments/assets/ccd495fb-f7d8-4794-8b69-506d7e8d6315)
 
 
-I perform Manga(Japanese Comics) Colorization using CycleGan(Cycle-Consistent Generative Adversarial Networks),the model is trained using a bw(Black and White) dan Color(Colored) Manga dataset,CycleGan design to convert the bw images to color images and vice versa,while preserving the underlying structure and content of the images.
+I perform Manga(Japanese Comics) Colorization using CycleGan(Cycle-Consistent Generative Adversarial Networks),the model is trained using a bw(Black and White) and color(Colored) Manga dataset,CycleGan design to convert the bw images to color images and vice versa,while preserving the underlying structure and content of the images.
 
 Dataset = https://huggingface.co/datasets/MichaelP84/manga-colorization-dataset/viewer
 
